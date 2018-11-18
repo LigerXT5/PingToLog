@@ -1,0 +1,19 @@
+Simple script made for personal use. Mainly for monitoring internet connection, either while gaming, streaming, or in general after a recent poor quality internet. Having the logs has helped me diagnose issues on my end, or forward to my ISP to help them, on some cases prove there is issues, when they can't see the issue when its not happening mid day; usually issues come up evenings when their support are less helpful or techs are unavailable to visit outside work hours.
+
+PingTesting.bat will ask for 1 IP/URL to ping, then runs constantly until closed.
+
+Ping Multiple.bat is preloaded with three IP/URLs and starts the PingTesting.bat for each listing. Easy to edit and add/subtract listings as needed.
+
+The logs are saved in the same folder/directory as the PingTesting.bat file is launched from. Recommend running the .bat from a folder that doesn't have other files.
+
+Each log is created based on the IP/URL + Time and Date.txt. That way no new same named files are made, ever. The files keep filling until the command prompt is stopped or closed. In the future I may create a check for that stops the script, and starts a new one either on time ran, time of day, or size of file. Pastbin.net free accounts are limited on data size of uploaded text files, which would make the Size of File feature enticing.
+
+Results will look as such, both in the command prompt and in the logs:
+
+Sun 11/18/2018 16:39:43 Reply from 1.1.1.1: bytes=32 time=35ms TTL=58
+Sun 11/18/2018 16:39:44 Reply from 1.1.1.1: bytes=32 time=43ms TTL=58
+Sun 11/18/2018 16:39:45 Reply from 1.1.1.1: bytes=32 time=34ms TTL=58
+Sun 11/18/2018 16:39:46 Reply from 1.1.1.1: bytes=32 time=38ms TTL=58
+Sun 11/18/2018 16:39:47 Reply from 1.1.1.1: bytes=32 time=66ms TTL=58
+Sun 11/18/2018 16:39:48 Reply from 1.1.1.1: bytes=32 time=37ms TTL=58
+Sun 11/18/2018 16:39:49 Reply from 1.1.1.1: bytes=32 time=35ms TTL=58
